@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <title>Vila do Povo</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="menu-button"></div>
+        <nav class="menu">
+          <ul>
+            <!-- <li><a href="#">Home</a></li> -->
+            <!-- <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li> -->
+        </ul>
+        </nav>
+    </header>
+    
+    <!-- Navegação -->
+     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:auto;max-width:300px;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Fechar Menu</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Início</a>
+        <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button">Links</a>
+        <a href="#vivereParvo" onclick="w3_close()" class="w3-bar-item w3-button">Bistrô Vivere Parvo</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contato</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1400px;margin:auto">
+            <!-- Ícone das três barras -->
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-right w3-padding-16">Mail .</div>
+            <div class="w3-center w3-padding-16">© Vila do Povo</div>
+        </div>
+    </div>
+    
+    
+    <main>
+        
+        <!-- <div class="audio">
+            <center>
+                <audio controls>
+                    <source src="./sound/Bolero Ravel.mp3" type="audio/mpeg">
+                </audio>
+            </center>    
+        </div> -->
+
+        <div class="container">
+            <!-- Seção Sobre Mim -->
+            <section id="about" class="about">     
+                <center><img src="./image/img01.jpg" alt="Vila do Povo"></center>
+                <center><p><i>Faça dos seus sonhos, seu objetivo!</i></p></center>
+                <div class="project-item">
+                    <center><a href="#" onclick="abrirCampoSenha()"><img src="./image/start.jpg" class="imgFormat" alt="Início"></a></center>
+                    <!-- Campo de senha (oculto inicialmente) -->
+                    <div id="campoSenha" style="display: none; margin-top: 10px;">
+                        <center>
+                        <label for="senha"></label>
+                        <input type="password" id="senha" name="senha">
+                        <butao onclick="verificarSenha()"></butao>
+                        <!-- <button onclick="verificarSenha()">Entrar</b0utton> -->
+                        </center>
+                    </div>
+                <!-- <h2 class="section-title">Início</h2> -->
+                    <p>"Faça dos seus sonhos, seu objetivo!" é uma afirmação poderosa, que carrega em si uma essência transformadora. Muitas vezes, os sonhos são vistos como algo distante, quase intangível, uma aspiração que existe apenas na nossa imaginação. No entanto, o verdadeiro poder de um sonho reside na sua capacidade de se tornar um objetivo claro, concreto, e alcançável. Para isso, é necessário transformar o sonho em algo que você pode trabalhar ativamente para conquistar.</p>
+                    <center><img src="./image/sonho.jpg" alt=""></center>
+                    <p>O primeiro passo para fazer dos seus sonhos o seu objetivo é visualizar com clareza o que você realmente deseja. Definir o sonho é crucial, porque um objetivo sem definição é apenas um desejo vago. Pergunte a si mesmo: O que eu quero alcançar? Quais são os detalhes desse sonho? Essa clareza ajuda a manter o foco e a determinar o caminho a seguir.</p>
+                    <p>Em seguida, é preciso traçar um plano de ação. Um sonho, por maior que seja, só se realiza com esforço, planejamento e disciplina. Quebre seu objetivo em pequenas metas alcançáveis, diárias, semanais, ou mensais. Cada pequeno passo adiante deve ser celebrado, pois representa progresso. Lembre-se de que a consistência é mais importante do que a velocidade. Não importa o quão lentamente você avance, o essencial é não parar.</p>
+                    <p>O caminho para realizar um sonho está repleto de desafios. É preciso resiliência para enfrentar os obstáculos, manter a confiança e a motivação mesmo quando as coisas parecem difíceis. Momentos de dúvida e frustração vão surgir, e é nesses momentos que você deve se lembrar por que começou. Mantenha seus olhos no prêmio final, e lembre-se de que o esforço investido hoje será recompensado no futuro.</p>
+                    <p>Além disso, acredite em si mesmo. A autoconfiança é um ingrediente essencial para transformar sonhos em realidade. Sem acreditar que você é capaz, os desafios parecerão insuperáveis. Cultivar uma mentalidade positiva, onde você se vê como alguém capaz de conquistar grandes coisas, é fundamental para manter a motivação e superar os obstáculos.</p>
+                    <p>A jornada para fazer dos seus sonhos o seu objetivo também envolve a adaptação e a flexibilidade. Nem sempre o caminho que você traçou será o mais direto ou o mais eficaz. Seja flexível para ajustar o curso conforme necessário, sem perder de vista o destino final.</p>
+                    <p>Por fim, desfrute do processo. Realizar um sonho é mais do que alcançar uma meta; é sobre o crescimento, o aprendizado e a transformação pessoal que ocorrem ao longo do caminho. Celebre suas conquistas, aprenda com os fracassos e siga sempre em frente com a determinação de quem sabe que está construindo algo grandioso. Faça dos seus sonhos, seu objetivo, e transforme sua vida naquilo que você sempre imaginou.</p>
+                    <p>Em suma, quando você faz dos seus sonhos seus objetivos, você está dando a eles um lugar no mundo real. Ao definir metas claras, planejar cuidadosamente, manter a resiliência e acreditar em si mesmo, qualquer sonho pode se tornar realidade. Afinal, os sonhos existem para nos lembrar de tudo o que podemos ser e conquistar.</p>
+                </div>
+            </section>
+        </div>
+                        
+        <!-- <div class="container">
+           <section id="design" class="projects">
+               <h2 class="section-title">Design Responsivo</h2>            
+               <div class="project-item">
+                <center><img src="./image/design.jpg" alt="Início"></center>                
+                    <strong><p>1. Design Responsivo</p></strong>
+                    <ul><li><strong>Objetivo:</strong> Garanta que sua página funcione bem em qualquer dispositivo, seja desktop, tablet ou smartphone.</li>
+                    <li><strong>Como fazer:</strong> Utilize <strong>media queries</strong> em CSS e frameworks como <strong>Bootstrap</strong> ou <strong>Tailwind CSS</strong> para criar layouts fluidos.</li>
+                    <li><strong>Importância:</strong> A experiência do usuário é crucial para manter visitantes em sua página, especialmente no mobile-first world atual.</li></ul>
+                    <strong><p>2. SEO (Search Engine Optimization)</p></strong>
+                    <ul><li><strong>Objetivo:</strong> Otimizar sua página para mecanismos de busca, como o Google.</li>
+                    <strong><li>Como fazer:</li></strong></ul>
+                    <ul><li>Use tags semânticas em HTML, como , etc.</li>
+                    Inclua <strong>meta tags</strong> relevantes como e tags de título otimizadas.</p>
+                    <li>Otimize imagens com <strong>alt text</strong> e escolha nomes de arquivos amigáveis para SEO.</ul>
+                    <ul><li><strong>Importância:</strong> Melhora o ranqueamento da sua página nos resultados de busca, atraindo mais visitantes organicamente.</li></ul>
+                    <strong><p>3. Velocidade de Carregamento</p></strong>
+                    <li>Objetivo: Reduzir o tempo de carregamento da página para melhorar a experiência do usuário.</li>
+                    <strong><li>Como fazer:</li></strong>
+                    <ul>Utilize imagens otimizadas em formatos leves, como <strong>WebP</strong>.</ul>
+                    <ul>Implemente o <strong>lazy loading</strong> para carregar imagens e vídeos apenas quando necessários.</ul>
+                    <ul>Minifique arquivos CSS e JavaScript para reduzir o tamanho dos dados transferidos.</ul>
+                    <ul>Use <strong>CDN (Content Delivery Network)</strong> para arquivos estáticos.</ul>
+                    <li><strong>Importância:</strong> Páginas rápidas têm maior taxa de retenção de usuários e melhores resultados em SEO.
+                    </li>
+               </div>
+           </section>
+        </div> -->
+
+        <div class="container">
+            <section id="links" class="projects"></section>
+               <h2 class="section-title">Links</h2>
+               <div class="project-item">
+                   <center><img src="./image/link.avif" class="imgFormat" alt="Bistrô Vivere Parvo"></center>
+                   <p><strong>Coolors:</strong> <a href="https://coolors.co/773344-e3b5a4-8e99b8-0b0014-d44d5c" target="_blank" class="corBlue">https://coolors.co.......</a></p>          
+                   <p><strong>Copilot:</strong> <a href="https://copilot.microsoft.com/" target="_blank" class="corBlue">https://copilot.microsoft.com/</a></p>          
+                   <p><strong>Dicionário:</strong> <a href="https://dicio.com.br/" target="_blank" class="corBlue">https://dicio.com.br/</a></p>          
+                   <p><strong>Dicionário:</strong> <a href="https://dicio.com.br/" target="_blank" class="corBlue">https://dicio.com.br/</a></p>          
+                   <p><strong>freepik:</strong> <a href="https://br.freepik.com/?log-in=google" target="_blank" class="corBlue">https://br.freepik...</a></p>          
+                   <p><strong>Gemini:</strong> <a href="https://gemini.google.com/app" target="_blank" class="corBlue">https://gemini.google.com/app</a></p>          
+                   <p><strong>GigHub:</strong> <a href="https://github.com" target="_blank" class="corBlue">meu Perfil no GitHub</a></p>
+                   <p><strong>Google Fonts:</strong> <a href="https://fonts.google.com/" target="_blank" class="corBlue">https://fonts.google.com/</a></p>          
+                   <p><strong>Google Tradutor:</strong> <a href="https://translate.google.com/" target="_blank" class="corBlue">https://translate...</a></p>          
+                   <p><strong>GTmetrix:</strong> <a href="https://gtmetrix.com/" target="_blank" class="corBlue">https://gtmetrix.com/</a></p>          
+                   <p><strong>Guia de layout CSS Flexbox:</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="corBlue">https://css-tricks...flexbox/</a></p>          
+                   <p><strong>HostGator</strong> <a href="https://www.hostgator.com.br/hospedagem-de-sites-seu-sucesso?gad_source=1&gclid=CjwKCAjw0aS3BhA3EiwAKaD2ZfEHhfN0aRsx6YsdY90geVfzXmCZYYkjgA-VVhd9YjzAIxknIkQiBBoCfDAQAvD_BwE" target="_blank" class="corBlue">https://www.hostgator.com.br...</a></p>          
+                   <p><strong>Lexica</strong> <a href="https://lexica.art/" target="_blank" class="corBlue">https://lexica.art/</a></p>          
+                   <p><strong>Materializecss:</strong> <a href="https://www.materializecss.com/" target="_blank" class="corBlue">https://www.materializecss.com/</a></p>          
+                   <p><strong>MND Web Docs:</strong> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox" target="_blank" class="corBlue">https://developer...flexbox</a></p>          
+                   <p><strong>PageSpeed Insights:</strong> <a href="https://pagespeed.web.dev/" target="_blank" class="corBlue">https://pagespeed.web.dev/</a></p>          
+                   <p><strong>ûdemy:</strong> <a href="https://www.udemy.com/" target="_blank" class="corBlue">https://www.udemy.com/</a></p>          
+                   <p><strong>w3schools.com/css:</strong> <a href="https://www.w3schools.com/css/" target="_blank" class="corBlue">https://www.w3schools.com/css/</a></p>          
+                   <p><strong>y2mate:</strong> <a href="https://y2mate.nu/Pio1" target="_blank" class="corBlue">https://y2mate.nu/Pio1</a></p>          
+               </div>
+            </section>
+        </div>        
+
+        <div class="container-img">
+        <!-- Seção Testemunhos -->
+           <section id="vivereParvo" class="projects">
+               <h2 class="section-title">Bistrô Vivere Parvo</h2>
+               <!-- <div class="comentarios-item">
+                   <p>"Esse console e o seguinte, fazem parte desse link (id). Pode-se criar outros consoles dentro do mesmo (id), pois o índice não aponta ao console em sí, mas a um conjunto de consoles que estiverem debaixo do título correspondente ao console pai.</p>
+                </div> -->
+                <div class="comentarios-item">  
+                    <div class="image-container">
+                        <img src="./image/logo1.jpg" alt="Ostra gratinada" class="hover-image">
+                        <div class="image-description">
+                        <h3 class="corMenu">Vivere Parvo</h3>
+                        <p>viver tranquilo e sossegado, viver com pouco</p>
+                    
+                    </div>
+                </div>
+                <p>Localizado na comunidade do Cabaraquara, o Bistrô Vivere Parvo proporciona a seus clientes a oportunidade de experimentar deliciosos sabores em meio a um ambiente paradisíaco. No entorno da Floresta Atlântica além da gastronomia requintada e pratos elaborados com ostras e frutos do mar, o Bistrô Vivere Parvo oferece a você um agradável espaço com piscina natural, bica e mirante.</p>
+                <center><h6 class="bordaTitulo">Ostras</h6></center>
+                <div class="image-container">
+                    <img src="./image/ost01.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Ostras Parvas</h3>
+                        <p>gratinada com tomate, cebola, queijo, azeite de oliva</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost02.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Camarão Pinheiro</h3>
+                        <p>camarões grelhados na manteiga ao molho de ervas</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost03.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Camarão à Grega</h3>
+                        <p>espetos de camarão com muçarela Acompanha arroz branco e batata frita</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost04.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Camarão Pinheiro</h3>
+                        <p>camarões grelhados na manteiga ao molho de ervas.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost05.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Salmão Cabaraquara</h3>
+                        <p>grelhado em um delicioso molho de maracujá</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost06.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Ferrugem</h3>
+                        <p>grelhado na manteiga, regado ao molho de mostarda e mel de abelha.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost07.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Ostras Portuguesas</h3>
+                        <p>gratinada com batata, manteiga, cebola e azeitonas</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./image/ost08.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu">Gratinada</h3>
+                        <p>ostras selecionadas, gratinadas com queijo parmesão, vinagrete e molhozidas no Cabaraquara</p>
+                    </div>
+                </div>     
+                <center><h6 class="bordaTitulo">Salmão</h6></center>        
+                <div class="image-container">
+                    <img src="./image/salmao.jpg" alt="Ostra gratinada" class="hover-image">
+                    <div class="image-description">
+                        <h3 class="corMenu"></h3>
+                        <p></p>
+                    </div>
+                </div>  
+           </section>
+        </div>
+        
+        <!-- <div class="container-img">
+            <section id="manual" class="projects"></section>
+               <h2 class="section-title">Manual</h2>
+               <div class="project-item">
+                    <div class="buttons-container">
+                        <center>
+                        <button id="openPdfBtn">Abrir Manual</button>   <button><a href= index.html>Fechar Manual</a></button>
+                        <a href="#" class="buttons-container" data-tooltip="" href="#" onclick="openVideo (href='manual.html')"></a>                                                  
+                        </center>
+                        <div class="pdf-container" id="pdfContainer" style="display: none;">
+                            <iframe id="pdfFrame" width="100%" height="600px"></iframe>
+                        </div>                       
+                    </div>                       
+                    <iframe id="videoFrame" src="" style="width: 100%; height: 500px; margin-top: 10px;"></iframe> 
+               </div>
+            </section>
+        </div>    -->
+
+        <div class="container">
+           <!-- Seção Contato -->
+           <section id="contact" class="contact">
+               <h2 class="section-title">Contato</h2>
+               <div class="contact-item">
+                  <p>Entre em contato comigo através dos seguintes meios:</p>
+                  <p><strong>Email:</strong> <a href="mailto:edesossegado@gmail.com" class="corBlue">edesossegado@gmail.com</a></p>
+                  <p><strong>Telefone:</strong> <a href="#" class="corBlue"> +55 (41) 99232-0288</a></p>
+                  <p><strong>GigHub:</strong> <a href="https://github.com" target="_blank" class="corBlue">meu Perfil no GitHub</a></p>
+                </div>
+           </section>      
+        </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>© Edinho Monteiro</p>
+    </footer>
+    <script src="script.js"></script>    
+</main>
+
+</body>
+</html>

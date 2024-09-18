@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+    <link rel="stylesheet" href="./style.css">
+    <title>Vila do Povo</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="menu-button"></div>
+        <nav class="menu">
+          <ul>
+            <!-- <li><a href="#">Home</a></li> -->
+            <!-- <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li> -->
+        </ul>
+        </nav>
+    </header>
+    
+    <!-- Navegação -->
+     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:auto;max-width:300px;" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Fechar Menu</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Início</a>
+        <a href="#artesanato" onclick="w3_close()" class="w3-bar-item w3-button" href="index.html">Artesanato</a>
+        <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button" href="index.html">Vídeo de Artesanato</a>
+        <a href="#edinho" onclick="w3_close()" class="w3-bar-item w3-button" href="index.html">Experiência Gratificante</a>
+        <a href="#manual" onclick="w3_close()" class="w3-bar-item w3-button">Manual</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contato</a>
+    </nav>
+    
+
+    
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1400px;margin:auto">
+            <!-- Ícone das três barras -->
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-right w3-padding-16">Mail .</div>
+            <div class="w3-center w3-padding-16">© Vila do Povo</div>
+        </div>
+    </div>
+    
+    
+    <main>
+        
+        <div class="audio">
+            <center>
+                <audio controls>
+                    <source src="./sound/Bolero Ravel.mp3" type="audio/mpeg">
+                </audio>
+            </center>
+        </div>       
+
+        <div class="container">
+            <!-- Seção Sobre Mim -->
+            <section id="about" class="about">
+
+
+                <center><img src="./image/img01.jpg" alt="Vila do Povo"></center>
+                <center><p><i>Faça dos seus sonhos, seu objetivo!</i></p></center>
+                <!-- <h2 class="section-title">Início</h2> -->
+               <div class="project-item">
+                   <center><a href="index.html"><img src="./image/return.jpg" class="imgFormat" alt="Retornar"></a></center>
+                   <p>O menu em uma página para internet é uma ferramenta fundamental para a navegação e a experiência do usuário. Ele serve como um ponto de referência principal, permitindo que os visitantes acessem rapidamente diferentes seções ou funcionalidades do site. Geralmente localizado no topo ou lateral da página, o menu pode ter diferentes formatos, como barras horizontais, verticais ou até menus hamburguer (com três linhas), que expandem ao serem clicados.
+                   <p>Os itens do menu costumam ser organizados de forma hierárquica, com categorias principais e subcategorias, oferecendo uma estrutura intuitiva. Ao clicar ou passar o mouse sobre um item, o usuário pode acessar páginas específicas, realizar ações ou visualizar informações adicionais.</p>
+                   <p>Menus dinâmicos podem incluir animações, como submenus deslizantes ou dropdowns, tornando a navegação mais interativa. A responsividade é outra característica importante: em dispositivos móveis, o menu deve se adaptar, garantindo uma navegação fluida e sem complicações.</p>
+                   <p>Para otimizar a experiência do usuário, é essencial que o menu seja simples, funcional e que siga o design da página, seja em cores, tipografia ou layout. Além disso, deve ser acessível, considerando a inclusão de descrições textuais e suporte para navegação por teclado.</p>
+                </div>
+            </section>
+        </div>
+                        
+        <!-- <div class="container">
+           <section id="design" class="projects">
+               <h2 class="section-title">Design Responsivo</h2>            
+               <div class="project-item">
+                <center><img src="./image/design.jpg" alt="Início"></center>                
+                    <strong><p>1. Design Responsivo</p></strong>
+                    <ul><li><strong>Objetivo:</strong> Garanta que sua página funcione bem em qualquer dispositivo, seja desktop, tablet ou smartphone.</li>
+                    <li><strong>Como fazer:</strong> Utilize <strong>media queries</strong> em CSS e frameworks como <strong>Bootstrap</strong> ou <strong>Tailwind CSS</strong> para criar layouts fluidos.</li>
+                    <li><strong>Importância:</strong> A experiência do usuário é crucial para manter visitantes em sua página, especialmente no mobile-first world atual.</li></ul>
+                    <strong><p>2. SEO (Search Engine Optimization)</p></strong>
+                    <ul><li><strong>Objetivo:</strong> Otimizar sua página para mecanismos de busca, como o Google.</li>
+                    <strong><li>Como fazer:</li></strong></ul>
+                    <ul><li>Use tags semânticas em HTML, como , etc.</li>
+                    Inclua <strong>meta tags</strong> relevantes como e tags de título otimizadas.</p>
+                    <li>Otimize imagens com <strong>alt text</strong> e escolha nomes de arquivos amigáveis para SEO.</ul>
+                    <ul><li><strong>Importância:</strong> Melhora o ranqueamento da sua página nos resultados de busca, atraindo mais visitantes organicamente.</li></ul>
+                    <strong><p>3. Velocidade de Carregamento</p></strong>
+                    <li>Objetivo: Reduzir o tempo de carregamento da página para melhorar a experiência do usuário.</li>
+                    <strong><li>Como fazer:</li></strong>
+                    <ul>Utilize imagens otimizadas em formatos leves, como <strong>WebP</strong>.</ul>
+                    <ul>Implemente o <strong>lazy loading</strong> para carregar imagens e vídeos apenas quando necessários.</ul>
+                    <ul>Minifique arquivos CSS e JavaScript para reduzir o tamanho dos dados transferidos.</ul>
+                    <ul>Use <strong>CDN (Content Delivery Network)</strong> para arquivos estáticos.</ul>
+                    <li><strong>Importância:</strong> Páginas rápidas têm maior taxa de retenção de usuários e melhores resultados em SEO.
+                    </li>
+               </div>
+           </section>
+        </div> -->
+
+        <!-- <div class="container">
+            <section id="links" class="projects"></section>
+               <h2 class="section-title">Links</h2>
+               <div class="project-item">
+                   <center><img src="./image/link.avif" class="imgFormat" alt="Bistrô Vivere Parvo"></center>
+                   <p><strong>Coolors:</strong> <a href="https://coolors.co/773344-e3b5a4-8e99b8-0b0014-d44d5c" target="_blank" class="corBlue">https://coolors.co.......</a></p>          
+                   <p><strong>Copilot:</strong> <a href="https://copilot.microsoft.com/" target="_blank" class="corBlue">https://copilot.microsoft.com/</a></p>          
+                   <p><strong>Dicionário:</strong> <a href="https://dicio.com.br/" target="_blank" class="corBlue">https://dicio.com.br/</a></p>          
+                   <p><strong>Gemini:</strong> <a href="https://gemini.google.com/app" target="_blank" class="corBlue">https://gemini.google.com/app</a></p>          
+                   <p><strong>GigHub:</strong> <a href="https://github.com" target="_blank" class="corBlue">meu Perfil no GitHub</a></p>
+                   <p><strong>Google:</strong> <a href="https://google.com" target="_blank" class="corBlue">https://www.google.com/</a></p>          
+                   <p><strong>Google Tradutor:</strong> <a href="https://translate.google.com/" target="_blank" class="corBlue">https://translate...</a></p>          
+                   <p><strong>GTmetrix:</strong> <a href="https://gtmetrix.com/" target="_blank" class="corBlue">https://gtmetrix.com/</a></p>          
+                   <p><strong>Guia de layout CSS Flexbox:</strong> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="corBlue">https://css-tricks...flexbox/</a></p>          
+                   <p><strong>Materializecss:</strong> <a href="https://www.materializecss.com/" target="_blank" class="corBlue">https://www.materializecss.com/</a></p>          
+                   <p><strong>MND Web Docs:</strong> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox" target="_blank" class="corBlue">https://developer...flexbox</a></p>          
+                   <p><strong>PageSpeed Insights:</strong> <a href="https://pagespeed.web.dev/" target="_blank" class="corBlue">https://pagespeed.web.dev/</a></p>          
+                   <p><strong>ûdemy:</strong> <a href="https://www.udemy.com/" target="_blank" class="corBlue">https://www.udemy.com/</a></p>          
+                   <p><strong>w3schools.com/css:</strong> <a href="https://www.w3schools.com/css/" target="_blank" class="corBlue">https://www.w3schools.com/css/</a></p>          
+                   <p><strong>y2mate:</strong> <a href="https://y2mate.nu/Pio1" target="_blank" class="corBlue">https://y2mate.nu/Pio1</a></p>          
+               </div>
+            </section>
+        </div>         -->
+
+        <div class="container-img">
+            <!-- Seção Testemunhos -->
+               <section id="artesanato" class="projects">
+                   <h2 class="section-title">Artesanato</h2>
+                   <div class="comentarios-item">  
+                        <div class="image-container">
+                        <img src="./image2/infinity.jpg" alt="Infinity Mirror" class="hover-image">
+                        <div class="image-description">
+                            <h3 class="corMenu">Infinity Mirror</h3>
+                            <p></p>                       
+                        </div>
+                    </div>
+    
+                            <p> O <strong><i class="corBlue">Infinity Mirror</i></strong> é uma ilusão visual criada por um conjunto de espelhos dispostos de maneira a gerar uma sensação de profundidade infinita. Normalmente, é composto por dois espelhos paralelos, um sendo semi-reflexivo (meio espelho), e o outro completamente reflexivo. Quando uma fonte de luz, como LEDs, é colocada entre os dois espelhos, a luz reflete repetidamente entre eles, criando a ilusão de um túnel ou profundidade que parece se estender infinitamente. Essa técnica é usada em decoração, arte, arquitetura e até em projetos de iluminação, criando efeitos visuais fascinantes e de alto impacto estético. A percepção de profundidade é reforçada pela diminuição progressiva da intensidade da luz em cada reflexão, dando a impressão de uma série infinita de imagens.</p><p class="corBlue">Clique na imagem para que ela cresça, e clique nela para voltar</p>
+
+                            <section class="portfolio">
+                                <div class="image-grid">                           
+                                    <div class="image-item">
+                                    <img src="./image2/lum (28).webp" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (1).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (2).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (3).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (4).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>            
+                                <div class="image-item">
+                                    <img src="./image2/lum (5).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (6).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (7).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (8).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>
+                                <div class="image-item">
+                                    <img src="./image2/lum (9).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>            
+                                <div class="image-item">
+                                    <img src="./image2/lum (10).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (11).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (11).webp" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (00).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (13).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (14).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (15).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (16).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (17).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (18).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (19).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (20).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (21).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (22).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (24).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (25).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (26).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (27).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (28).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>            
+                                <div class="image-item">
+                                    <img src="./image2/lum (29).webp" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (29).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (30).jpeg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (30).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (30).webp" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (31).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (31).webp" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (32).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>       
+                                <div class="image-item">
+                                    <img src="./image2/lum (32).webp" alt="Projeto 2" class="clickable-image">
+                                </div>   
+                                <div class="image-item">
+                                    <img src="./image2/lum (33).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (34).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (35).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (36).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>      
+                                <div class="image-item">
+                                    <img src="./image2/lum (37).jpg" alt="Projeto 2" class="clickable-image">
+                                </div>   
+                            </div>                                                        
+                        </section>
+                        <section class="portfolio">
+                        <center><h6 class="bordaTitulo">Paletes</h6></center> 
+                        <p>
+                            O uso de paletes em artesanato tornou-se uma tendência popular devido à sua versatilidade e sustentabilidade. Paletes de madeira, muitas vezes descartados por indústrias e comércios, podem ser reaproveitados para criar uma variedade de itens, desde móveis rústicos até peças decorativas. São frequentemente transformados em mesas, estantes, camas, sofás e até jardins verticais, trazendo um estilo rústico e industrial aos ambientes. Além de ser uma opção econômica, o uso de paletes no artesanato promove o reaproveitamento de materiais, alinhando-se a práticas ecológicas e de baixo custo. Artesãos utilizam técnicas como lixamento, pintura e acabamento para personalizar os paletes, criando peças únicas. O trabalho com paletes oferece liberdade criativa, sendo uma excelente opção para projetos DIY (faça você mesmo).</p>
+                            <section class="portfolio">
+                                <div class="image-grid">                           
+                                 <div class="image-item">
+                                     <img src="./image3/pl (1).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (3).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (4).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (5).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (6).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (7).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (8).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (9).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (10).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (11).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (12).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (13).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                 <div class="image-item">
+                                     <img src="./image3/pl (14).jpg" alt="Projeto 2" class="clickable-image">
+                                 </div>
+                                </div>                                                        
+                        </section>
+                        <section class="portfolio">
+
+                                </div>                                                        
+                        </section>
+                        <section class="portfolio">
+                                                                    
+                        </div>                                                        
+                    </section>                               
+                    </div>
+               </section>
+        </div>        
+
+        <div class="container">
+            <!-- Seção Testemunhos -->
+               <section id="video" class="projects">
+                   <h2 class="section-title">Vídeo de Artesanato</h2>
+                   <div class="comentarios-item">  
+                       <div class="video-container" id="video-container">
+                           <video controls id="my-video">
+                               <source src="./video/abajur giratorio.webm" type="video/mp4">
+                               Seu navegador não suporta a tag de vídeo.
+                           </video>
+                       </div>
+                       <center><h6 class="bordaTitulo">abat-jour Giratório</h6></center>
+                       <p>O uso de vídeos na apresentação de trabalhos artesanais é essencial para transmitir de forma mais completa o processo criativo e a qualidade das peças. Ao contrário de fotos estáticas, o vídeo permite que o espectador veja detalhes como textura, movimento e dimensões reais dos materiais utilizados. Isso gera uma experiência imersiva, aproximando o público do artesão e de sua arte. Além disso, o vídeo possibilita demonstrar as técnicas e o cuidado envolvidos na produção, valorizando o trabalho manual. O formato audiovisual também amplia o alcance de divulgação, atraindo públicos em redes sociais e plataformas digitais, onde o vídeo é um dos formatos mais engajadores. Através de uma narrativa visual, é possível contar a história por trás da obra, conectando emocionalmente o espectador com o artesanato e aumentando o seu valor percebido.</p>
+                   </div>
+               </section>                               
+        </div>
+
+
+        <div class="container-img">
+            <!-- Seção Testemunhos -->
+               <section id="edinho" class="projects">
+                   <h2 class="section-title">Experiência Gratificante</h2>
+                   <div class="comentarios-item">  
+                        <div class="image-container">
+                            <img src="./image/art(0).jpg" alt="Infinity Mirror" class="hover-image">
+                        <div class="image-description">
+                            <h3 class="corMenu"></h3>
+                            <p></p>                       
+                        </div>
+                   </div>
+                            <p><span class="corBlue">Produzir artesanato é uma experiência profundamente gratificante,</span> pois envolve a criação de algo único com as próprias mãos. O prazer de escolher materiais, formas e cores <span class="corBlue">traz uma sensação de liberdade criativa,</span> permitindo que a imaginação flua livremente. Cada peça concluída carrega a satisfação do esforço pessoal e a beleza de um trabalho feito com cuidado. O processo é muitas vezes terapêutico, conectando o artesão com suas raízes culturais e consigo mesmo. Ver uma ideia ganhar forma, aos poucos, é uma jornada de realização que alimenta a alma. Além disso, o artesanato permite a troca de emoções e histórias com quem valoriza o feito à mão. O toque humano em cada peça torna o objeto mais especial, criando uma ligação afetiva tanto para quem faz quanto para quem recebe. Esse ciclo de criação e apreciação é uma fonte constante de alegria e orgulho.</p>
+               </section>                               
+       </div>
+
+        <div class="container-img">
+            <section id="manual" class="projects"></section>
+               <h2 class="section-title">Manual</h2>
+               <div class="project-item">
+                    <div class="buttons-container">
+                        <center>
+                        <button id="openPdfBtn">Abrir Manual</button>   <button><a href= acessoRestrito.html>Fechar Manual</a></button>
+                        <a href="#" class="buttons-container" data-tooltip="" href="#" onclick="openVideo (href='manual.html')"></a>
+                        </center>
+                        <div class="pdf-container" id="pdfContainer" style="display: none;">
+                            <iframe id="pdfFrame" width="100%" height="600px"></iframe>
+                        </div>                       
+                    </div>                       
+                    <iframe id="videoFrame" src="" style="width: 100%; height: 500px; margin-top: 10px;"></iframe> 
+               </div>
+            </section>
+        </div>   
+
+        <div class="container">
+           <!-- Seção Contato -->
+           <section id="contact" class="contact">
+               <h2 class="section-title">Contato</h2>
+               <div class="contact-item">
+                  <p>Entre em contato comigo através dos seguintes meios:</p>
+                  <p><strong>Email:</strong> <a href="mailto:edesossegado@gmail.com" class="corBlue">edesossegado@gmail.com</a></p>
+                  <p><strong>Telefone:</strong> <a href="#" class="corBlue"> +55 (41) 99232-0288</a></p>
+                  <p><strong>GigHub:</strong> <a href="https://github.com" target="_blank" class="corBlue">meu Perfil no GitHub</a></p>
+                </div>
+           </section>      
+        </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>© Edinho Monteiro</p>
+    </footer>
+    <script src="script.js"></script>    
+</main>
+
+</body>
+</html>
